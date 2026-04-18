@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifs Diamants Free Fire</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: #22c55e;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+  color: #f43f5e;
+}
+
+button {
+  background: #22c55e;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💎 Tarifs Free Fire</h1>
+
+<div class="container" id="tarifs"></div>
+
+<script>
+const tarifs = [
+  {nom: "100+10 💎", prix: "4 600 Ar"},
+  {nom: "210+21 💎", prix: "9 200 Ar"},
+  {nom: "310+31 💎", prix: "13 700 Ar"},
+  {nom: "420+42 💎", prix: "18 300 Ar"},
+  {nom: "530+53 💎", prix: "23 100 Ar"},
+  {nom: "630+63 💎", prix: "27 700 Ar"},
+  {nom: "730+73 💎", prix: "32 400 Ar"},
+  {nom: "840+84 💎", prix: "37 100 Ar"},
+  {nom: "1080+108 💎", prix: "46 400 Ar"},
+  {nom: "1290+129 💎", prix: "55 300 Ar"},
+  {nom: "1500+150 💎", prix: "64 100 Ar"},
+  {nom: "2200+220 💎", prix: "91 600 Ar"}
+];
+
+const container = document.getElementById("tarifs");
+
+tarifs.forEach(item => {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  card.innerHTML = `
+    <h2>${item.nom}</h2>
+    <p>${item.prix}</p>
+    <button onclick="acheter('${item.nom}')">Acheter</button>
+  `;
+
+  container.appendChild(card);
+});
+
+function acheter(pack) {
+  const numero = "261XXXXXXXX"; // ton numéro WhatsApp
+  const message = encodeURIComponent("Je veux acheter : " + pack);
+  window.open(`https://wa.me/${numero}?text=${message}`);
+}
+</script>
+
+</body>
+</html>
