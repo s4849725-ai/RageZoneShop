@@ -1,0 +1,95 @@
+/* 🌐 BASE */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+  background: #0b1220;
+  color: white;
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+  color: #22c55e;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* 📦 CONTAINER */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 🧾 CARDS */
+.card {
+  background: #111827;
+  padding: 15px;
+  width: 260px;
+  border-radius: 12px;
+}
+
+/* 🔘 BUTTON */
+button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+/* 🛒 PANIER */
+.panier {
+  margin-top: 30px;
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #1e293b;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+}
+
+/* 🌗 MODE CLAIR */
+body.light {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+body.light .card,
+body.light .panier {
+  background: white;
+  color: #111827;
+}
+
+/* 🌗 BOUTON MODE */
+.theme-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #22c55e;
+  padding: 10px;
+  border-radius: 8px;
+  }
