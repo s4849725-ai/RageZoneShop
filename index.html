@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Free Fire Shop Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>💎 Free Fire Shop Pro</h1>
+
+<div class="container">
+
+  <div class="card">
+    <h2>100+10 💎</h2>
+    <p>4 600 Ar</p>
+    <button onclick="ajouterPanier('100+10 💎', 4600)">Ajouter</button>
+  </div>
+
+  <div class="card">
+    <h2>310+31 💎</h2>
+    <p>13 700 Ar</p>
+    <button onclick="ajouterPanier('310+31 💎', 13700)">Ajouter</button>
+  </div>
+
+  <div class="card">
+    <h2>530+53 💎</h2>
+    <p>23 100 Ar</p>
+    <button onclick="ajouterPanier('530+53 💎', 23100)">Ajouter</button>
+  </div>
+
+</div>
+
+<!-- PANIER -->
+<div class="panier">
+  <h2>🛒 Panier</h2>
+  <ul id="liste"></ul>
+  <p>Total : <span id="total">0</span> Ar</p>
+
+  <button onclick="payer()">Payer</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
