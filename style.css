@@ -1,0 +1,98 @@
+body {
+  font-family: Arial;
+  background: #0b1220;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #22c55e;
+}
+
+/* FORM */
+.formulaire {
+  max-width: 400px;
+  margin: auto;
+}
+
+.formulaire input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* CARDS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: #111827;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+button {
+  width: 100%;
+  margin: 4px 0;
+  padding: 8px;
+  background: #22c55e;
+  border: none;
+  color: white;
+}
+
+.panier {
+  margin-top: 20px;
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  background: #1e293b;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* MODE CLAIR */
+body.light {
+  background: #f3f4f6;
+  color: black;
+}
+
+body.light .card,
+body.light .panier {
+  background: white;
+}
+
+/* BOUTON MODE */
+.theme-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+    }/* CENTRE PAGE ACCUEIL */
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.center button {
+  padding: 15px 30px;
+  font-size: 18px;
+}
