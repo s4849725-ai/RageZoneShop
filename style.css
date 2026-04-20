@@ -1,0 +1,15 @@
+body{font-family:Arial;background:#0b1220;color:white;padding:20px}
+.center{display:flex;justify-content:center;align-items:center;height:100vh;flex-direction:column}
+.container{display:flex;justify-content:center}
+.card{background:#111827;padding:15px;border-radius:10px;width:280px}
+button{width:100%;margin:5px 0;padding:10px;background:#22c55e;border:none;color:white}
+.categories{text-align:center;margin:10px}
+.panier{margin-top:20px;background:#0f172a;padding:15px;border-radius:10px}
+li{background:#1e293b;margin:5px;padding:5px}
+li button{width:auto;background:red;margin-left:10px;padding:5px;border-radius:5px}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);justify-content:center;align-items:center}
+.modal-content{background:#111827;padding:20px;border-radius:10px;width:300px}
+.modal input,.modal select{width:100%;margin:5px 0;padding:10px}
+.theme-btn{position:fixed;top:10px;right:10px}
+body.light{background:#f3f4f6;color:black}
+body.light .card,body.light .panier,body.light .modal-content{background:white;color:black}
